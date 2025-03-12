@@ -24,7 +24,7 @@ services:
       # - letsencrypt:/letsencrypt
       - /var/run/docker.sock:/var/run/docker.sock
   website:
-    image: ghcr.io/moxcz/personal-website
+    image: ghcr.io/moxcz/personal-website:latest
     labels:
       - "traefik.http.routers.website.rule=Host(`mocosmo.me`)"
       # - "traefik.enable=true"
