@@ -31,4 +31,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/moxcz/personal-website:${{ env.COMMIT_SHORT_SHA }}
+          tags: |
+            ghcr.io/moxcz/personal-website:${{ env.COMMIT_SHORT_SHA }}
+            ghcr.io/moxcz/personal-website:latest
